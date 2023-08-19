@@ -1,0 +1,2 @@
+class TrackingPlan < ApplicationRecord
+end

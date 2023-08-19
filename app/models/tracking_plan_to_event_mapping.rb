@@ -1,0 +1,2 @@
+class TrackingPlanToEventMapping < ApplicationRecord
+end
