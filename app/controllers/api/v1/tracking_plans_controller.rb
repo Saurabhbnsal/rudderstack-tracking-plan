@@ -109,7 +109,7 @@ module Api
           return [false, 'Event name already exists', event_ids] if Event.where(name: event_names).exists?
 
           events.each do |event|
-            event = Event.create(name: name, description: description, rules: rules)
+            event = Event.create(name: event[:name], description:  event[:description], rules:  event[:rules])
             event_ids << event.id
           end
         return [true, 'Events created', event_ids]
