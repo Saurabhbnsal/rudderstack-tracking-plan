@@ -1,0 +1,43 @@
+<div class="home-form-container" style="width: 90%; margin: auto;">
+  <%= form_for @tracking_plan, :html => {id: 'event_form', class: 'page-content'} do |f| %>
+    <!--   Checking for error-->
+    <% if @tracking_plan.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@tracking_plan.errors.count, "error") %> prohibited this page from being saved:</h2>
+        <ul>
+          <% @tracking_plan.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="form-group">
+      <%= f.text_field :name, class: 'form-control' %>
+      <%= f.label :name %><br>
+    </div>
+
+    <div class="field" style="display:flex; flex-direction:column;">
+      <h4>Select Events</h4>
+      <div>
+        <%= f.fields_for :tracking_plan_to_event_mappings do |builder| %>
+          <%= render 'tracking_plan_to_event_mapping_fields', f: builder %>
+        <% end %>
+        <%= link_to_add_fields "Add Event", f, :tracking_plan_to_event_mappings %>
+        <%#= link_to_add_fields "Add Addresses", f, :addresses %>
+      </div>
+    </div>
+
+
+
+<% end %>
+</div>
+
+<script type="text/javascript">
+    function submitForm() {
+        const form = document.getElementById('event_form');
+        form.submit();
+    }
+
+</script>
+

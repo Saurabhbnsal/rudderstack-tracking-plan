@@ -20,20 +20,21 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_18_190101) do
   end
 
   create_table "tracking_plan_to_event_mappings", force: :cascade do |t|
-    t.integer "events_id"
-    t.integer "tracking_plans_id"
+    t.integer "event_id"
+    t.integer "tracking_plan_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["events_id"], name: "index_tracking_plan_to_event_mappings_on_events_id"
-    t.index ["tracking_plans_id"], name: "index_tracking_plan_to_event_mappings_on_tracking_plans_id"
+    t.index ["event_id"], name: "index_tracking_plan_to_event_mappings_on_event_id"
+    t.index ["tracking_plan_id"], name: "index_tracking_plan_to_event_mappings_on_tracking_plan_id"
   end
 
   create_table "tracking_plans", force: :cascade do |t|
     t.string "name"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "tracking_plan_to_event_mappings", "events", column: "events_id"
-  add_foreign_key "tracking_plan_to_event_mappings", "tracking_plans", column: "tracking_plans_id"
+  add_foreign_key "tracking_plan_to_event_mappings", "events"
+  add_foreign_key "tracking_plan_to_event_mappings", "tracking_plans"
 end

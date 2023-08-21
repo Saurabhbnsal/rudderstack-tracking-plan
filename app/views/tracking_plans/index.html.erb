@@ -1,0 +1,42 @@
+
+<div style="margin:10px 100px; font-size: 32px; font-width: 700;">
+  <div class="h4">Tracking Plans</div>
+</div>
+
+<table class="table dataTable">
+
+  <thead>
+  <tr>
+    <th>
+      <div class="table-header">
+        <span class="column-title">ID</span>
+      </div>
+    </th>
+
+    <th>
+      <div class="table-header">
+        <span class="column-title">Name</span>
+      </div>
+    </th>
+
+
+    <th>
+      <div class="table-header">
+        <span class="column-title">Actions</span>
+      </div>
+    </th>
+  </tr>
+  </thead>
+
+  <tbody >
+  <% @tracking_plans.each do |tracking_plan| %>
+    <tr>
+      <td><%= tracking_plan.id %></td>
+      <td><%= tracking_plan.name %></td>
+
+
+      <td><%= link_to 'Edit', edit_tracking_plan_path(tracking_plan) %></td> <td><%= link_to 'Show', tracking_plan_path(tracking_plan) %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,9 @@
+<fieldset style="width: 600px">
+  <%= f.label :event %><br>
+  <div class="selectField">
+    <%= f.select :event_id, options_for_select(@events, f.object.event_id) %>
+  </div>
+
+  <%= f.hidden_field :_destroy %>
+  <%= link_to "Remove", '#', class: "remove_fields" %>
+</fieldset>

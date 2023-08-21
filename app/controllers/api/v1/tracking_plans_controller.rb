@@ -19,7 +19,7 @@ module Api
         tracking_plan = TrackingPlan.create(name: name, description: description)
         unless event_ids.blank?
           event_ids.each do |event_id|
-          TrackingPlanToEventMapping.create(tracking_plans_id: tracking_plan.id, events_id: event_id)
+          TrackingPlanToEventMapping.create(tracking_plan_id: tracking_plan.id, event_id: event_id)
           end
         end
         response_data({tracking_plan_id: tracking_plan.id} ,
@@ -53,11 +53,11 @@ module Api
           return response_data({}, 'Not all valid event names', 422, error: {})
         end
         event_ids = events.pluck(:id)
-        if TrackingPlanToEventMapping.where(event_id: event_ids, tracking_plans_id: id).exists?
+        if TrackingPlanToEventMapping.where(event_id: event_ids, tracking_plan_id: id).exists?
           return response_data({}, 'Some associations already exist', 422, error: {})
         end
         event_ids.each do |event_id|
-          TrackingPlanToEventMapping.create(events_id: event_id, tracking_plans_id: id)
+          TrackingPlanToEventMapping.create(event_id: event_id, tracking_plan_id: id)
         end
         response_data(TrackingPlan.find_by(id: id).as_json, 'Successfully added associations',
                       200, error: {})
@@ -75,7 +75,7 @@ module Api
           return response_data({}, 'Not all valid event names', 422, error: {})
         end
         event_ids = events.pluck(:id)
-        tp_event_mappings = TrackingPlanToEventMapping.where(event_id: event_ids, tracking_plans_id: id)
+        tp_event_mappings = TrackingPlanToEventMapping.where(event_id: event_ids, tracking_plan_id: id)
         if tp_event_mappings.size != event_names.size
           return response_data({}, 'Some associations dont exist', 422, error: {})
         end
@@ -89,7 +89,7 @@ module Api
         id = params[:id]
         tracking_plan = TrackingPlan.find_by(id: id)
         return response_data({}, 'Tracking Plan not found', 422, error: {}) if tracking_plan.blank?
-        event_ids = TrackingPlanToEventMapping.where(tracking_plans_id: id).pluck(:events_id)
+        event_ids = TrackingPlanToEventMapping.where(tracking_plan_id: id).pluck(:event_id)
         events = Event.where(id: event_ids)
         response_data(events.as_json, 'Events for the tracking plan',
                       200, error: {})

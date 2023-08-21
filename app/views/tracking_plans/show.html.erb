@@ -1,0 +1,11 @@
+<div style="font-size: 24px;font-weight: 700;margin-bottom: 20px">
+  Tracking Plan Details
+</div>
+<div> <b>ID:</b> <%= @tracking_plan.id %></div>
+<div> <b>Name:</b> <%= @tracking_plan.name %></div>
+<div> <b>Events:</b>
+<% @tracking_plan.events.each do |event| %>
+    <div><%= link_to event.name, event_path(event) %></div>
+  <% end %>
+</div>
+

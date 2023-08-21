@@ -1,0 +1,22 @@
+<div class="page-layout simple tabbed">
+
+  <!-- HEADER -->
+  <div class="page-header bg-primary text-auto row no-gutters align-items-center justify-content-between p-6">
+    <div class="row no-gutters align-items-center">
+
+      <%= link_to '<i class="icon icon-arrow-left"></i>'.html_safe, tracking_plans_path, class: 'btn btn-icon mr-4' %>
+
+      <div>Edit Tracking Plan</div>
+    </div>
+
+    <button type="button" class="btn btn-light" onclick="submitForm()">
+      SAVE
+    </button>
+
+  </div>
+  <!-- / HEADER -->
+
+  <!-- CONTENT -->
+  <%= render 'form', form_type: 'edit' %>
+  <!-- / CONTENT -->
+</div>
