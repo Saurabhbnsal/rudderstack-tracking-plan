@@ -1,0 +1,40 @@
+<div class="home-form-container" style="width: 90%; margin: auto;">
+  <%= form_for @event, :html => {id: 'event_form', class: 'page-content'} do |f| %>
+    <!--   Checking for error-->
+    <% if @event.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@event.errors.count, "error") %> prohibited this page from being saved:</h2>
+        <ul>
+          <% @event.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="form-group">
+      <%= f.text_field :name, class: 'form-control' %>
+      <%= f.label :name %><br>
+    </div>
+
+    <div class="form-group">
+      <%= f.text_field :description, class: 'form-control' %>
+      <%= f.label :description %><br>
+    </div>
+
+
+    <div class="form-group">
+      <%= f.text_area :rules, class: "form-textarea-input" %>
+      <%= f.label :rules %><br>
+    </div>
+
+<% end %>
+</div>
+
+<script type="text/javascript">
+    function submitForm() {
+        const form = document.getElementById('event_form');
+        form.submit();
+    }
+</script>
+

@@ -1,0 +1,45 @@
+
+<div style="margin:10px 100px; font-size: 32px; font-width: 700;">
+  <div class="h4">Events</div>
+</div>
+
+<table class="table dataTable">
+
+  <thead>
+  <tr>
+    <th>
+      <div class="table-header">
+        <span class="column-title">ID</span>
+      </div>
+    </th>
+
+    <th>
+      <div class="table-header">
+        <span class="column-title">Name</span>
+      </div>
+    </th>
+    <th>
+      <div class="table-header">
+        <span class="column-title">Description</span>
+      </div>
+    </th>
+
+    <th>
+      <div class="table-header">
+        <span class="column-title">Actions</span>
+      </div>
+    </th>
+  </tr>
+  </thead>
+
+  <tbody >
+  <% @events.each do |event| %>
+    <tr>
+      <td><%= event.id %></td>
+      <td><%= event.name %></td>
+      <td><%= event.description %></td>
+      <td><%= link_to 'Edit', edit_event_path(event) %></td> <td><%= link_to 'Show', event_path(event) %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

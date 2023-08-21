@@ -1,0 +1,7 @@
+<div style="font-size: 24px;font-weight: 700;margin-bottom: 20px">
+  Event Details
+</div>
+<div> <b>ID:</b> <%= @event.id %></div>
+<div> <b>Name:</b> <%= @event.name %></div>
+<div> <b>Description:</b> <%= @event.description %></div>
+<div> <b>Rules:</b> <%= JSON.pretty_generate(@event.rules) %></div>

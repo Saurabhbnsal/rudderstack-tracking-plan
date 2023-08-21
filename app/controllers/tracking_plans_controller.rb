@@ -1,0 +1,2 @@
+class TrackingPlansController < ApplicationController
+end
