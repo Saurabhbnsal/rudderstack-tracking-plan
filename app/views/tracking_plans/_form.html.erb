@@ -17,20 +17,28 @@
       <%= f.label :name %><br>
     </div>
 
-    <div class="field" style="display:flex; flex-direction:column;">
-      <h4>Select Events</h4>
-      <div>
-        <%= f.fields_for :tracking_plan_to_event_mappings do |builder| %>
-          <%= render 'tracking_plan_to_event_mapping_fields', f: builder %>
-        <% end %>
-        <%= link_to_add_fields "Add Event", f, :tracking_plan_to_event_mappings %>
-        <%#= link_to_add_fields "Add Addresses", f, :addresses %>
+    <%= f.fields_for :events do |ff| %>
+      <div class="flex gap-2">
+        <div class="text-sm text-right"> <%= ff.object.id || "New Event" %> </div>
+        <%= ff.check_box :_destroy, title: "Check to delete ingredient" %>
+
+        <%= ff.label :name %><br>
+        <div class="selectField">
+          <%= ff.text_field :name   %>
+        </div>
+        <div class="selectField">
+          <%= ff.text_field :description   %>
+        </div>
+        <div class="selectField">
+          <%= ff.text_field :rules   %>
+        </div>
+
       </div>
-    </div>
+    <% end %>
 
+    <%= f.submit "Add Event", name: :add_event %>
 
-
-<% end %>
+  <% end %>
 </div>
 
 <script type="text/javascript">
