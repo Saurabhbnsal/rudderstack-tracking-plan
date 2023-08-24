@@ -2,28 +2,11 @@ module Api
   module V1
     class TrackingPlansController < ApiController
       def create
-        name = params[:name]
-        description = params[:description]
-        rules = params[:rules]
-
-        if name.blank?
-          return response_data({}, 'Missing params', 422, error: {})
+        success, error_message, tracking_plan = TrackingPlan.create_plan(params)
+        unless success
+          return response_data({}, error_message, 422, error: {})
         end
-        event_ids = []
-        if rules.present?
-          success, error_message, event_ids = validate_rules(rules)
-          if !success
-            return response_data({}, error_message, 422, error: {})
-          end
-        end
-        tracking_plan = TrackingPlan.create(name: name, description: description)
-        unless event_ids.blank?
-          event_ids.each do |event_id|
-          TrackingPlanToEventMapping.create(tracking_plan_id: tracking_plan.id, event_id: event_id)
-          end
-        end
-        response_data({tracking_plan_id: tracking_plan.id} ,
-                      'Successfully created Tracking plan!', 200, error: {})
+        response_data({tracking_plan: tracking_plan.as_json} , message, 200, error: {})
       end
 
       def index
@@ -31,14 +14,12 @@ module Api
       end
 
       def update
-        id = params[:id]
-        tracking_plan = TrackingPlan.find_by(id: id)
-        return response_data({}, 'Tracking Plan not found', 422, error: {}) if tracking_plan.blank?
+        success, message, tracking_plan = TrackingPlan.update_plan(params)
+        unless success
+          return response_data({}, message, 422, error: {})
+        end
 
-        tracking_plan.name = params[:name] if params[:name].present?
-        tracking_plan.description = params[:description] if params[:description].present?
-        tracking_plan = tracking_plan.save
-        response_data(tracking_plan.as_json, 'Updated tracking plan!', 200, error: {})
+        response_data(tracking_plan.as_json, message, 200, error: {})
       end
 
       def add_events

@@ -16,6 +16,10 @@
       <%= f.text_field :name, class: 'form-control' %>
       <%= f.label :name %><br>
     </div>
+    <div class="form-group">
+      <%= f.text_field :description, class: 'form-control' %>
+      <%= f.label :description %><br>
+    </div>
 
     <%= f.fields_for :events do |ff| %>
       <div class="flex gap-2">
