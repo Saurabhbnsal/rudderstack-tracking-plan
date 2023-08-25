@@ -9876,3 +9876,1484 @@ Processing by TrackingPlansController#edit as HTML
 Completed 200 OK in 17ms (Views: 10.5ms | ActiveRecord: 1.1ms | Allocations: 8700)
 
 
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 00:47:18 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:24
+  Rendered tracking_plans/_form.html.erb (Duration: 14.7ms | Allocations: 17230)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 15.6ms | Allocations: 17998)
+  Rendered layout layouts/application.html.erb (Duration: 1586.6ms | Allocations: 200407)
+Completed 200 OK in 1602ms (Views: 1588.0ms | ActiveRecord: 0.8ms | Allocations: 215343)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 00:48:09 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.0ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:24
+  Rendered tracking_plans/_form.html.erb (Duration: 21.5ms | Allocations: 17242)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 22.4ms | Allocations: 18010)
+  Rendered layout layouts/application.html.erb (Duration: 113.7ms | Allocations: 76309)
+Completed 200 OK in 129ms (Views: 114.9ms | ActiveRecord: 1.0ms | Allocations: 91057)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 00:48:21 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.5ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:24
+  Rendered tracking_plans/_form.html.erb (Duration: 9.0ms | Allocations: 7182)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 10.3ms | Allocations: 7586)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 14702)
+Completed 200 OK in 26ms (Views: 21.3ms | ActiveRecord: 0.8ms | Allocations: 16833)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 00:48:38 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:24
+  Rendered tracking_plans/_form.html.erb (Duration: 3.9ms | Allocations: 7111)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 4.9ms | Allocations: 7512)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 14629)
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 0.3ms | Allocations: 16665)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 00:48:46 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:24
+  Rendered tracking_plans/_form.html.erb (Duration: 10.0ms | Allocations: 7106)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 11.2ms | Allocations: 7507)
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 14622)
+Completed 200 OK in 43ms (Views: 35.9ms | ActiveRecord: 0.5ms | Allocations: 16641)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 00:48:56 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:24
+  Rendered tracking_plans/_form.html.erb (Duration: 24.6ms | Allocations: 7149)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 25.5ms | Allocations: 7550)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 14689)
+Completed 200 OK in 45ms (Views: 35.1ms | ActiveRecord: 0.4ms | Allocations: 16726)
+
+
+Started PATCH "/tracking_plans/1" for ::1 at 2023-08-25 00:49:01 +0530
+Processing by TrackingPlansController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tracking_plan"=>{"name"=>"1234", "description"=>"", "events_attributes"=>{"0"=>{"_destroy"=>"1", "name"=>"My event111", "description"=>"asdf", "rules"=>"{}", "id"=>"15"}, "1"=>{"_destroy"=>"0", "name"=>"Order Viewed", "description"=>"Whose order viewed", "rules"=>"$schema http://json-schema.org/draft-07/schema# type object properties {\"type\"=>\"object\", \"properties\"=>{\"product\"=>{\"type\"=>[\"string\"]}, \"price\"=>{\"type\"=>[\"number\"]}, \"currency\"=>{\"type\"=>[\"string\"]}}, \"required\"=>[\"product\", \"price\", \"currency\"]}", "id"=>"16"}, "2"=>{"_destroy"=>"0", "name"=>"My event111", "description"=>"asdf", "rules"=>"{}", "id"=>"21"}, "3"=>{"_destroy"=>"0", "name"=>"Order Viewed", "description"=>"Whose order viewed", "rules"=>"$schema http://json-schema.org/draft-07/schema# type object properties {\"type\"=>\"object\", \"properties\"=>{\"product\"=>{\"type\"=>[\"string\"]}, \"price\"=>{\"type\"=>[\"number\"]}, \"currency\"=>{\"type\"=>[\"string\"]}}, \"required\"=>[\"product\", \"price\", \"currency\"]}", "id"=>"22"}}}, "id"=>"1"}
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  [1m[36mCACHE TrackingPlan Load (0.0ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:36:in `update_plan'
+  [1m[36mEvent Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "events" WHERE "events"."name" IN (?, ?, ?, ?) LIMIT ?[0m  [["name", "My event111"], ["name", "Order Viewed"], ["name", "My event111"], ["name", "Order Viewed"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:78:in `validate_rules'
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "My event111"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:86:in `block in validate_rules'
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "My event111"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:91:in `block in validate_rules'
+  [1m[36mTrackingPlanToEventMapping Load (0.1ms)[0m  [1m[34mSELECT "tracking_plan_to_event_mappings".* FROM "tracking_plan_to_event_mappings" WHERE "tracking_plan_to_event_mappings"."event_id" = ? AND "tracking_plan_to_event_mappings"."tracking_plan_id" = ? ORDER BY "tracking_plan_to_event_mappings"."id" DESC LIMIT ?[0m  [["event_id", 1], ["tracking_plan_id", 1], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:92:in `block in validate_rules'
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "Order Viewed"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:86:in `block in validate_rules'
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "My event111"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:86:in `block in validate_rules'
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "Order Viewed"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:86:in `block in validate_rules'
+Redirected to http://localhost:3000/tracking_plans
+Completed 302 Found in 13ms (ActiveRecord: 0.8ms | Allocations: 8038)
+
+
+Started GET "/tracking_plans" for ::1 at 2023-08-25 00:49:01 +0530
+Processing by TrackingPlansController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/index.html.erb within layouts/application
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans"[0m
+  ↳ app/views/tracking_plans/index.html.erb:32
+  Rendered tracking_plans/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1918)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 9318)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 9696)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 00:49:03 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.4ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.2ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:24
+  Rendered tracking_plans/_form.html.erb (Duration: 9.1ms | Allocations: 6327)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 9.5ms | Allocations: 6440)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 13185)
+Completed 200 OK in 24ms (Views: 18.9ms | ActiveRecord: 0.7ms | Allocations: 14490)
+
+
+Started PATCH "/tracking_plans/1" for ::1 at 2023-08-25 00:49:06 +0530
+Processing by TrackingPlansController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tracking_plan"=>{"name"=>"1234", "description"=>"", "events_attributes"=>{"0"=>{"_destroy"=>"0", "name"=>"My event111", "description"=>"asdf", "rules"=>"{}", "id"=>"15"}, "1"=>{"_destroy"=>"0", "name"=>"Order Viewed", "description"=>"Whose order viewed", "rules"=>"$schema http://json-schema.org/draft-07/schema# type object properties {\"type\"=>\"object\", \"properties\"=>{\"product\"=>{\"type\"=>[\"string\"]}, \"price\"=>{\"type\"=>[\"number\"]}, \"currency\"=>{\"type\"=>[\"string\"]}}, \"required\"=>[\"product\", \"price\", \"currency\"]}", "id"=>"16"}, "2"=>{"_destroy"=>"0", "name"=>"My event111", "description"=>"asdf", "rules"=>"{}", "id"=>"21"}, "3"=>{"_destroy"=>"0", "name"=>"Order Viewed", "description"=>"Whose order viewed", "rules"=>"$schema http://json-schema.org/draft-07/schema# type object properties {\"type\"=>\"object\", \"properties\"=>{\"product\"=>{\"type\"=>[\"string\"]}, \"price\"=>{\"type\"=>[\"number\"]}, \"currency\"=>{\"type\"=>[\"string\"]}}, \"required\"=>[\"product\", \"price\", \"currency\"]}", "id"=>"22"}}}, "add_event"=>"Add Event", "id"=>"1"}
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/new.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:24
+  Rendered tracking_plans/_form.html.erb (Duration: 6.4ms | Allocations: 6309)
+  Rendered tracking_plans/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 6575)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 13320)
+Completed 422 Unprocessable Entity in 23ms (Views: 16.5ms | ActiveRecord: 0.4ms | Allocations: 15966)
+
+
+Started PATCH "/tracking_plans/1" for ::1 at 2023-08-25 00:49:11 +0530
+Processing by TrackingPlansController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tracking_plan"=>{"name"=>"1234", "description"=>"", "events_attributes"=>{"0"=>{"_destroy"=>"0", "name"=>"My event111", "description"=>"asdf", "rules"=>"{}", "id"=>"15"}, "1"=>{"_destroy"=>"0", "name"=>"Order Viewed", "description"=>"Whose order viewed", "rules"=>"$schema http://json-schema.org/draft-07/schema# type object properties {\"type\"=>\"object\", \"properties\"=>{\"product\"=>{\"type\"=>[\"string\"]}, \"price\"=>{\"type\"=>[\"number\"]}, \"currency\"=>{\"type\"=>[\"string\"]}}, \"required\"=>[\"product\", \"price\", \"currency\"]}", "id"=>"16"}, "2"=>{"_destroy"=>"0", "name"=>"My event111", "description"=>"asdf", "rules"=>"{}", "id"=>"21"}, "3"=>{"_destroy"=>"0", "name"=>"Order Viewed", "description"=>"Whose order viewed", "rules"=>"$schema http://json-schema.org/draft-07/schema# type object properties {\"type\"=>\"object\", \"properties\"=>{\"product\"=>{\"type\"=>[\"string\"]}, \"price\"=>{\"type\"=>[\"number\"]}, \"currency\"=>{\"type\"=>[\"string\"]}}, \"required\"=>[\"product\", \"price\", \"currency\"]}", "id"=>"22"}, "4"=>{"_destroy"=>"0", "name"=>"sadsadsa", "description"=>"dad", "rules"=>"dasdas"}}}, "id"=>"1"}
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  [1m[36mCACHE TrackingPlan Load (0.0ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:36:in `update_plan'
+  [1m[36mEvent Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "events" WHERE "events"."name" IN (?, ?, ?, ?, ?) LIMIT ?[0m  [["name", "My event111"], ["name", "Order Viewed"], ["name", "My event111"], ["name", "Order Viewed"], ["name", "sadsadsa"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:78:in `validate_rules'
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "My event111"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:86:in `block in validate_rules'
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "Order Viewed"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:86:in `block in validate_rules'
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "My event111"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:86:in `block in validate_rules'
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "Order Viewed"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:86:in `block in validate_rules'
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "sadsadsa"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:86:in `block in validate_rules'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/tracking_plan.rb:97:in `block in validate_rules'
+  [1m[36mEvent Create (1.0ms)[0m  [1m[32mINSERT INTO "events" ("name", "description", "rules", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "sadsadsa"], ["description", "dad"], ["rules", "\"dasdas\""], ["created_at", "2023-08-24 19:19:11.856386"], ["updated_at", "2023-08-24 19:19:11.856386"]]
+  ↳ app/models/tracking_plan.rb:97:in `block in validate_rules'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/tracking_plan.rb:97:in `block in validate_rules'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/tracking_plan.rb:54:in `block in update_plan'
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:54:in `block in update_plan'
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:54:in `block in update_plan'
+  [1m[36mTrackingPlanToEventMapping Create (0.4ms)[0m  [1m[32mINSERT INTO "tracking_plan_to_event_mappings" ("event_id", "tracking_plan_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["event_id", 24], ["tracking_plan_id", 1], ["created_at", "2023-08-24 19:19:11.888646"], ["updated_at", "2023-08-24 19:19:11.888646"]]
+  ↳ app/models/tracking_plan.rb:54:in `block in update_plan'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/tracking_plan.rb:54:in `block in update_plan'
+Redirected to http://localhost:3000/tracking_plans
+Completed 302 Found in 46ms (ActiveRecord: 3.9ms | Allocations: 16461)
+
+
+Started GET "/tracking_plans" for ::1 at 2023-08-25 00:49:11 +0530
+Processing by TrackingPlansController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/index.html.erb within layouts/application
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans"[0m
+  ↳ app/views/tracking_plans/index.html.erb:32
+  Rendered tracking_plans/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 9250)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 9558)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 00:49:13 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.3ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:24
+  Rendered tracking_plans/_form.html.erb (Duration: 10.5ms | Allocations: 7297)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 10.9ms | Allocations: 7410)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 14175)
+Completed 200 OK in 29ms (Views: 21.0ms | ActiveRecord: 0.5ms | Allocations: 15516)
+
+
+Started PATCH "/tracking_plans/1" for ::1 at 2023-08-25 00:49:16 +0530
+Processing by TrackingPlansController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tracking_plan"=>{"name"=>"1234", "description"=>"", "events_attributes"=>{"0"=>{"_destroy"=>"0", "name"=>"My event111", "description"=>"asdf", "rules"=>"{}", "id"=>"15"}, "1"=>{"_destroy"=>"0", "name"=>"Order Viewed", "description"=>"Whose order viewed", "rules"=>"$schema http://json-schema.org/draft-07/schema# type object properties {\"type\"=>\"object\", \"properties\"=>{\"product\"=>{\"type\"=>[\"string\"]}, \"price\"=>{\"type\"=>[\"number\"]}, \"currency\"=>{\"type\"=>[\"string\"]}}, \"required\"=>[\"product\", \"price\", \"currency\"]}", "id"=>"16"}, "2"=>{"_destroy"=>"0", "name"=>"My event111", "description"=>"asdf", "rules"=>"{}", "id"=>"21"}, "3"=>{"_destroy"=>"0", "name"=>"Order Viewed", "description"=>"Whose order viewed", "rules"=>"$schema http://json-schema.org/draft-07/schema# type object properties {\"type\"=>\"object\", \"properties\"=>{\"product\"=>{\"type\"=>[\"string\"]}, \"price\"=>{\"type\"=>[\"number\"]}, \"currency\"=>{\"type\"=>[\"string\"]}}, \"required\"=>[\"product\", \"price\", \"currency\"]}", "id"=>"22"}, "4"=>{"_destroy"=>"1", "name"=>"sadsadsa", "description"=>"dad", "rules"=>"dasdas", "id"=>"24"}}}, "id"=>"1"}
+  [1m[36mTrackingPlan Load (0.3ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.2ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  [1m[36mCACHE TrackingPlan Load (0.0ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:36:in `update_plan'
+  [1m[36mEvent Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "events" WHERE "events"."name" IN (?, ?, ?, ?, ?) LIMIT ?[0m  [["name", "My event111"], ["name", "Order Viewed"], ["name", "My event111"], ["name", "Order Viewed"], ["name", "sadsadsa"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:78:in `validate_rules'
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "My event111"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:86:in `block in validate_rules'
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "Order Viewed"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:86:in `block in validate_rules'
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "My event111"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:86:in `block in validate_rules'
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "Order Viewed"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:86:in `block in validate_rules'
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "sadsadsa"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:86:in `block in validate_rules'
+  [1m[36mCACHE Event Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."name" = ? LIMIT ?[0m  [["name", "sadsadsa"], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:91:in `block in validate_rules'
+  [1m[36mTrackingPlanToEventMapping Load (0.0ms)[0m  [1m[34mSELECT "tracking_plan_to_event_mappings".* FROM "tracking_plan_to_event_mappings" WHERE "tracking_plan_to_event_mappings"."event_id" = ? AND "tracking_plan_to_event_mappings"."tracking_plan_id" = ? ORDER BY "tracking_plan_to_event_mappings"."id" DESC LIMIT ?[0m  [["event_id", 24], ["tracking_plan_id", 1], ["LIMIT", 1]]
+  ↳ app/models/tracking_plan.rb:92:in `block in validate_rules'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/tracking_plan.rb:92:in `block in validate_rules'
+  [1m[36mTrackingPlanToEventMapping Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tracking_plan_to_event_mappings" WHERE "tracking_plan_to_event_mappings"."id" = ?[0m  [["id", 17]]
+  ↳ app/models/tracking_plan.rb:92:in `block in validate_rules'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/tracking_plan.rb:92:in `block in validate_rules'
+Redirected to http://localhost:3000/tracking_plans
+Completed 302 Found in 18ms (ActiveRecord: 2.2ms | Allocations: 8019)
+
+
+Started GET "/tracking_plans" for ::1 at 2023-08-25 00:49:16 +0530
+Processing by TrackingPlansController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/index.html.erb within layouts/application
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans"[0m
+  ↳ app/views/tracking_plans/index.html.erb:32
+  Rendered tracking_plans/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 1584)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 8889)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.1ms | Allocations: 9151)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 00:49:17 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:24
+  Rendered tracking_plans/_form.html.erb (Duration: 8.6ms | Allocations: 6216)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 9.0ms | Allocations: 6325)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 13070)
+Completed 200 OK in 22ms (Views: 18.4ms | ActiveRecord: 0.4ms | Allocations: 14379)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 00:49:34 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:24
+  Rendered tracking_plans/_form.html.erb (Duration: 6.2ms | Allocations: 7815)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 7.2ms | Allocations: 8219)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 15344)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 0.3ms | Allocations: 17319)
+
+
+Started GET "/tracking_plans" for ::1 at 2023-08-25 00:49:40 +0530
+Processing by TrackingPlansController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/index.html.erb within layouts/application
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans"[0m
+  ↳ app/views/tracking_plans/index.html.erb:32
+  Rendered tracking_plans/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1828)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 9246)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.2ms | Allocations: 9583)
+
+
+Started GET "/events" for ::1 at 2023-08-25 00:49:46 +0530
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:36
+  Rendered events/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2738)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 10449)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 11293)
+
+
+Started GET "/events" for ::1 at 2023-08-25 00:49:46 +0530
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:36
+  Rendered events/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2264)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 9594)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.2ms | Allocations: 9878)
+
+
+Started GET "/events" for ::1 at 2023-08-25 00:50:26 +0530
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:36
+  Rendered events/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2770)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 10513)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.2ms | Allocations: 11638)
+
+
+Started GET "/events" for ::1 at 2023-08-25 00:50:32 +0530
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:36
+  Rendered events/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2689)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 10444)
+Completed 200 OK in 32ms (Views: 26.5ms | ActiveRecord: 0.2ms | Allocations: 11386)
+
+
+Started GET "/events" for ::1 at 2023-08-25 00:50:33 +0530
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:36
+  Rendered events/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2265)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 9563)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.5ms | Allocations: 9848)
+
+
+Started GET "/events" for ::1 at 2023-08-25 00:50:33 +0530
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:36
+  Rendered events/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2271)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 9556)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 9825)
+
+
+Started GET "/events" for ::1 at 2023-08-25 00:50:40 +0530
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:36
+  Rendered events/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2692)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 10428)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.6ms | Allocations: 11351)
+
+
+Started GET "/tracking_plans/" for ::1 at 2023-08-25 00:50:52 +0530
+Processing by TrackingPlansController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/index.html.erb within layouts/application
+  [1m[36mTrackingPlan Load (0.7ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans"[0m
+  ↳ app/views/tracking_plans/index.html.erb:32
+  Rendered tracking_plans/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2033)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 9603)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.7ms | Allocations: 10265)
+
+
+Started GET "/tracking_plans/" for ::1 at 2023-08-25 00:51:12 +0530
+Processing by TrackingPlansController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/index.html.erb within layouts/application
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans"[0m
+  ↳ app/views/tracking_plans/index.html.erb:32
+  Rendered tracking_plans/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1982)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 9738)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 10686)
+
+
+Started GET "/tracking_plans/" for ::1 at 2023-08-25 00:51:35 +0530
+Processing by TrackingPlansController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/index.html.erb within layouts/application
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans"[0m
+  ↳ app/views/tracking_plans/index.html.erb:31
+  Rendered tracking_plans/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1980)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 9698)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.1ms | Allocations: 10626)
+
+
+Started GET "/tracking_plans/1" for ::1 at 2023-08-25 00:51:37 +0530
+Processing by TrackingPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/show.html.erb:7
+  Rendered tracking_plans/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1315)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 8605)
+Completed 200 OK in 18ms (Views: 15.2ms | ActiveRecord: 0.3ms | Allocations: 9376)
+
+
+Started GET "/events" for ::1 at 2023-08-25 00:51:48 +0530
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:35
+  Rendered events/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2676)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 10231)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.2ms | Allocations: 10870)
+
+
+Started GET "/events/1" for ::1 at 2023-08-25 00:51:50 +0530
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:55:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 187)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 7486)
+Completed 200 OK in 13ms (Views: 9.1ms | ActiveRecord: 0.3ms | Allocations: 8913)
+
+
+Started GET "/events/1" for ::1 at 2023-08-25 00:52:10 +0530
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:55:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 226)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 7967)
+Completed 200 OK in 19ms (Views: 14.8ms | ActiveRecord: 0.3ms | Allocations: 10024)
+
+
+Started GET "/events/1" for ::1 at 2023-08-25 00:52:40 +0530
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:55:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 226)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 7981)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.1ms | Allocations: 9361)
+
+
+Started GET "/events/1" for ::1 at 2023-08-25 00:52:51 +0530
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:55:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 225)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 8055)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.2ms | Allocations: 9511)
+
+
+Started GET "/events/1" for ::1 at 2023-08-25 00:52:57 +0530
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:55:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 223)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 8023)
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 0.2ms | Allocations: 9476)
+
+
+Started GET "/events/" for ::1 at 2023-08-25 00:53:06 +0530
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:35
+  Rendered events/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2591)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 9902)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.1ms | Allocations: 10240)
+
+
+Started GET "/events/2" for ::1 at 2023-08-25 00:53:10 +0530
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:55:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 7325)
+Completed 200 OK in 16ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 8078)
+
+
+Started GET "/tracking_plans/1" for ::1 at 2023-08-25 00:54:07 +0530
+Processing by TrackingPlansController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.3ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/show.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/show.html.erb:8
+  Rendered tracking_plans/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1504)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 9250)
+Completed 200 OK in 30ms (Views: 24.5ms | ActiveRecord: 0.4ms | Allocations: 10509)
+
+
+Started GET "/events/15" for ::1 at 2023-08-25 00:54:15 +0530
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mEvent Load (2.8ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:55:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 227)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 7813)
+Completed 200 OK in 24ms (Views: 14.9ms | ActiveRecord: 2.8ms | Allocations: 8950)
+
+
+Started GET "/events/16" for ::1 at 2023-08-25 00:54:18 +0530
+Processing by EventsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:55:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/show.html.erb within layouts/application
+  Rendered events/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 7317)
+Completed 200 OK in 18ms (Views: 14.7ms | ActiveRecord: 0.3ms | Allocations: 8121)
+
+
+Started GET "/tracking_plans/" for ::1 at 2023-08-25 00:54:19 +0530
+Processing by TrackingPlansController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/index.html.erb within layouts/application
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans"[0m
+  ↳ app/views/tracking_plans/index.html.erb:31
+  Rendered tracking_plans/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1852)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 9140)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.2ms | Allocations: 9475)
+
+
+Started GET "/events/new" for ::1 at 2023-08-25 00:54:34 +0530
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 16.7ms | Allocations: 4595)
+  Rendered events/new.html.erb within layouts/application (Duration: 19.6ms | Allocations: 4953)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 11829)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 12197)
+
+
+Started GET "/events/new" for ::1 at 2023-08-25 00:55:13 +0530
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 10.4ms | Allocations: 4474)
+  Rendered events/new.html.erb within layouts/application (Duration: 12.4ms | Allocations: 4892)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 12069)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 12993)
+
+
+Started GET "/events/new" for ::1 at 2023-08-25 00:55:19 +0530
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 2.8ms | Allocations: 1995)
+  Rendered events/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2401)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 9534)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 10502)
+
+
+Started GET "/events/new" for ::1 at 2023-08-25 00:55:22 +0530
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 3.7ms | Allocations: 1995)
+  Rendered events/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2402)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 9549)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 10492)
+
+
+Started GET "/events/new" for ::1 at 2023-08-25 00:55:28 +0530
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 4.2ms | Allocations: 1995)
+  Rendered events/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2404)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 9635)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 10580)
+
+
+Started GET "/events/new" for ::1 at 2023-08-25 00:55:47 +0530
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 1.3ms | Allocations: 1995)
+  Rendered events/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2402)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 9618)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 10561)
+
+
+Started GET "/events/new" for ::1 at 2023-08-25 00:56:14 +0530
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 2.3ms | Allocations: 2010)
+  Rendered events/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2416)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 9549)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 10522)
+
+
+Started GET "/events/new" for ::1 at 2023-08-25 00:56:20 +0530
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 2.7ms | Allocations: 2005)
+  Rendered events/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2412)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 9551)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 10495)
+
+
+Started GET "/events/new" for ::1 at 2023-08-25 00:56:58 +0530
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 2.5ms | Allocations: 2004)
+  Rendered events/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2411)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 9549)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 10490)
+
+
+Started GET "/events/new" for ::1 at 2023-08-25 00:57:09 +0530
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 2.0ms | Allocations: 2020)
+  Rendered events/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2430)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 9586)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 10531)
+
+
+Started GET "/events/new" for ::1 at 2023-08-25 00:57:25 +0530
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 1.5ms | Allocations: 1998)
+  Rendered events/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2406)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 9557)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 10498)
+
+
+Started GET "/events/new" for ::1 at 2023-08-25 00:57:59 +0530
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 2.7ms | Allocations: 2036)
+  Rendered events/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2323)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 9466)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 10408)
+
+
+Started GET "/events/new" for ::1 at 2023-08-25 00:58:44 +0530
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 2.6ms | Allocations: 2030)
+  Rendered events/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2317)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 9450)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 10391)
+
+
+Started GET "/events/new" for ::1 at 2023-08-25 00:58:47 +0530
+Processing by EventsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 3.3ms | Allocations: 2030)
+  Rendered events/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2318)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 9451)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 10392)
+
+
+Started POST "/events" for ::1 at 2023-08-25 00:58:53 +0530
+Processing by EventsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "event"=>{"name"=>"", "description"=>"", "rules"=>""}}
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 1.3ms | Allocations: 1003)
+  Rendered events/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1070)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 7936)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 9040)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 00:59:03 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.4ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.2ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:24
+  Rendered tracking_plans/_form.html.erb (Duration: 9.8ms | Allocations: 7807)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 11.6ms | Allocations: 8224)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 15163)
+Completed 200 OK in 28ms (Views: 21.5ms | ActiveRecord: 0.7ms | Allocations: 16976)
+
+
+Started GET "/events/1/edit" for ::1 at 2023-08-25 00:59:15 +0530
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:55:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 1.2ms | Allocations: 1540)
+  Rendered events/edit.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1812)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 8580)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.1ms | Allocations: 9391)
+
+
+Started GET "/events/1/edit" for ::1 at 2023-08-25 00:59:49 +0530
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:55:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 1.9ms | Allocations: 2146)
+  Rendered events/edit.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2431)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 9555)
+Completed 200 OK in 17ms (Views: 12.2ms | ActiveRecord: 0.9ms | Allocations: 11194)
+
+
+Started GET "/tracking_plans/" for ::1 at 2023-08-25 01:01:17 +0530
+Processing by TrackingPlansController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/index.html.erb within layouts/application
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans"[0m
+  ↳ app/views/tracking_plans/index.html.erb:31
+  Rendered tracking_plans/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1984)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 9751)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.1ms | Allocations: 10666)
+
+
+Started GET "/tracking_plans/new" for ::1 at 2023-08-25 01:01:23 +0530
+Processing by TrackingPlansController#new as HTML
+  [1m[36mEvent Pluck (0.3ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/new.html.erb within layouts/application
+  Rendered tracking_plans/_form.html.erb (Duration: 3.0ms | Allocations: 2030)
+  Rendered tracking_plans/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2359)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 9125)
+Completed 200 OK in 18ms (Views: 12.6ms | ActiveRecord: 0.3ms | Allocations: 10087)
+
+
+Started GET "/tracking_plans/new" for ::1 at 2023-08-25 01:01:56 +0530
+Processing by TrackingPlansController#new as HTML
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/new.html.erb within layouts/application
+  Rendered tracking_plans/_form.html.erb (Duration: 2.2ms | Allocations: 2158)
+  Rendered tracking_plans/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2444)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 9579)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.1ms | Allocations: 11205)
+
+
+Started GET "/tracking_plans/new" for ::1 at 2023-08-25 01:02:18 +0530
+Processing by TrackingPlansController#new as HTML
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/new.html.erb within layouts/application
+  Rendered tracking_plans/_form.html.erb (Duration: 1.5ms | Allocations: 2151)
+  Rendered tracking_plans/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2436)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 9567)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 11167)
+
+
+Started POST "/tracking_plans" for ::1 at 2023-08-25 01:02:20 +0530
+Processing by TrackingPlansController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tracking_plan"=>{"name"=>"", "description"=>""}, "add_event"=>"Add Event"}
+  [1m[36mEvent Pluck (0.2ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/new.html.erb within layouts/application
+  Rendered tracking_plans/_form.html.erb (Duration: 2.0ms | Allocations: 1925)
+  Rendered tracking_plans/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1995)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 9012)
+Completed 422 Unprocessable Entity in 40ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 13437)
+
+
+Started GET "/tracking_plans/new" for ::1 at 2023-08-25 01:02:30 +0530
+Processing by TrackingPlansController#new as HTML
+  [1m[36mEvent Pluck (0.2ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/new.html.erb within layouts/application
+  Rendered tracking_plans/_form.html.erb (Duration: 3.2ms | Allocations: 2138)
+  Rendered tracking_plans/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2426)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 9707)
+Completed 200 OK in 22ms (Views: 18.5ms | ActiveRecord: 0.2ms | Allocations: 11307)
+
+
+Started POST "/tracking_plans" for ::1 at 2023-08-25 01:02:31 +0530
+Processing by TrackingPlansController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tracking_plan"=>{"name"=>"", "description"=>""}, "add_event"=>"Add Event"}
+  [1m[36mEvent Pluck (0.2ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/new.html.erb within layouts/application
+  Rendered tracking_plans/_form.html.erb (Duration: 2.3ms | Allocations: 1800)
+  Rendered tracking_plans/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1861)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 8626)
+Completed 422 Unprocessable Entity in 15ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 10869)
+
+
+Started GET "/tracking_plans/new" for ::1 at 2023-08-25 01:02:51 +0530
+Processing by TrackingPlansController#new as HTML
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/new.html.erb within layouts/application
+  Rendered tracking_plans/_form.html.erb (Duration: 2.4ms | Allocations: 2140)
+  Rendered tracking_plans/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2426)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 9557)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.1ms | Allocations: 11056)
+
+
+Started POST "/tracking_plans" for ::1 at 2023-08-25 01:02:53 +0530
+Processing by TrackingPlansController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tracking_plan"=>{"name"=>"", "description"=>""}, "add_event"=>"Add Event"}
+  [1m[36mEvent Pluck (0.5ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/new.html.erb within layouts/application
+  Rendered tracking_plans/_form.html.erb (Duration: 2.7ms | Allocations: 1924)
+  Rendered tracking_plans/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1994)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 8865)
+Completed 422 Unprocessable Entity in 35ms (Views: 12.2ms | ActiveRecord: 0.5ms | Allocations: 13457)
+
+
+Started GET "/tracking_plans/new" for ::1 at 2023-08-25 01:03:07 +0530
+Processing by TrackingPlansController#new as HTML
+  [1m[36mEvent Pluck (0.2ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/new.html.erb within layouts/application
+  Rendered tracking_plans/_form.html.erb (Duration: 3.6ms | Allocations: 2160)
+  Rendered tracking_plans/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2446)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 9581)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.2ms | Allocations: 11176)
+
+
+Started POST "/tracking_plans" for ::1 at 2023-08-25 01:03:09 +0530
+Processing by TrackingPlansController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tracking_plan"=>{"name"=>"", "description"=>""}, "add_event"=>"Add Event"}
+  [1m[36mEvent Pluck (0.2ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/new.html.erb within layouts/application
+  Rendered tracking_plans/_form.html.erb (Duration: 9.7ms | Allocations: 1800)
+  Rendered tracking_plans/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1861)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 8629)
+Completed 422 Unprocessable Entity in 28ms (Views: 19.5ms | ActiveRecord: 0.2ms | Allocations: 10888)
+
+
+Started GET "/tracking_plans/new" for ::1 at 2023-08-25 01:03:15 +0530
+Processing by TrackingPlansController#new as HTML
+  [1m[36mEvent Pluck (0.2ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/new.html.erb within layouts/application
+  Rendered tracking_plans/_form.html.erb (Duration: 3.0ms | Allocations: 2163)
+  Rendered tracking_plans/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2453)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 9606)
+Completed 200 OK in 20ms (Views: 15.6ms | ActiveRecord: 0.2ms | Allocations: 11112)
+
+
+Started POST "/tracking_plans" for ::1 at 2023-08-25 01:03:17 +0530
+Processing by TrackingPlansController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tracking_plan"=>{"name"=>"", "description"=>""}, "add_event"=>"Add Event"}
+  [1m[36mEvent Pluck (0.2ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/new.html.erb within layouts/application
+  Rendered tracking_plans/_form.html.erb (Duration: 3.2ms | Allocations: 1800)
+  Rendered tracking_plans/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1861)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 8619)
+Completed 422 Unprocessable Entity in 18ms (Views: 13.3ms | ActiveRecord: 0.2ms | Allocations: 10871)
+
+
+Started GET "/tracking_plans/edit/1" for ::1 at 2023-08-25 01:03:21 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/tracking_plans/edit/1"):
+  
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:03:26 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 5.1ms | Allocations: 7111)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 6.3ms | Allocations: 7305)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 14175)
+Completed 200 OK in 20ms (Views: 14.7ms | ActiveRecord: 0.5ms | Allocations: 15688)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:03:34 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 6.3ms | Allocations: 7803)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 6.9ms | Allocations: 8084)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 15211)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.2ms | Allocations: 17160)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:03:42 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 11.5ms | Allocations: 7803)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 13.0ms | Allocations: 8084)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 15199)
+Completed 200 OK in 29ms (Views: 24.4ms | ActiveRecord: 0.4ms | Allocations: 17217)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:03:47 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 8.7ms | Allocations: 7812)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 9.3ms | Allocations: 8094)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 15235)
+Completed 200 OK in 20ms (Views: 15.2ms | ActiveRecord: 0.4ms | Allocations: 17254)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:04:01 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 5.5ms | Allocations: 7807)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 6.3ms | Allocations: 8089)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 15225)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.3ms | Allocations: 17247)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:04:19 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 4.4ms | Allocations: 7856)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 5.6ms | Allocations: 8137)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 15264)
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 0.3ms | Allocations: 17285)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:04:23 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.4ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 21.9ms | Allocations: 7847)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 22.9ms | Allocations: 8129)
+  Rendered layout layouts/application.html.erb (Duration: 69.9ms | Allocations: 15266)
+Completed 200 OK in 77ms (Views: 71.7ms | ActiveRecord: 0.7ms | Allocations: 17285)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:04:34 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.0ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 5.0ms | Allocations: 7853)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 5.7ms | Allocations: 8139)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 15276)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.2ms | Allocations: 17298)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:04:37 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 6.3ms | Allocations: 7853)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 7.1ms | Allocations: 8134)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 15269)
+Completed 200 OK in 21ms (Views: 16.2ms | ActiveRecord: 0.5ms | Allocations: 17291)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:04:44 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.4ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.2ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 10.5ms | Allocations: 7856)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 11.4ms | Allocations: 8137)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 15269)
+Completed 200 OK in 30ms (Views: 22.9ms | ActiveRecord: 0.7ms | Allocations: 17290)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:04:45 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 7.8ms | Allocations: 6905)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 8.0ms | Allocations: 6966)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 13711)
+Completed 200 OK in 21ms (Views: 16.9ms | ActiveRecord: 0.4ms | Allocations: 15083)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:04:49 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 7.8ms | Allocations: 7862)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 8.5ms | Allocations: 8146)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 15287)
+Completed 200 OK in 20ms (Views: 16.3ms | ActiveRecord: 0.4ms | Allocations: 17244)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:05:06 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.0ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.0ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 4.1ms | Allocations: 7916)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 4.6ms | Allocations: 8199)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 15334)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.1ms | Allocations: 17356)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:05:32 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 4.2ms | Allocations: 7887)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 5.0ms | Allocations: 8168)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 15298)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.3ms | Allocations: 17317)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:06:04 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 8.9ms | Allocations: 6940)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 9.4ms | Allocations: 7001)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 13760)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.4ms | Allocations: 15132)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:06:06 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.4ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.2ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 8.8ms | Allocations: 6937)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 9.1ms | Allocations: 6998)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 13769)
+Completed 200 OK in 33ms (Views: 18.9ms | ActiveRecord: 0.7ms | Allocations: 15077)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:06:14 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 6.6ms | Allocations: 7847)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 7.7ms | Allocations: 8133)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 15270)
+Completed 200 OK in 19ms (Views: 15.0ms | ActiveRecord: 0.3ms | Allocations: 17227)
+
+
+Started GET "/tracking_plans/1/edit" for ::1 at 2023-08-25 01:06:26 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 1]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 8.3ms | Allocations: 7958)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 9.0ms | Allocations: 8239)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 15375)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.3ms | Allocations: 17397)
+
+
+Started GET "/tracking_plans" for ::1 at 2023-08-25 01:06:41 +0530
+Processing by TrackingPlansController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/index.html.erb within layouts/application
+  [1m[36mTrackingPlan Load (0.3ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans"[0m
+  ↳ app/views/tracking_plans/index.html.erb:31
+  Rendered tracking_plans/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1836)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 9127)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.3ms | Allocations: 9462)
+
+
+Started GET "/tracking_plans/14/edit" for ::1 at 2023-08-25 01:06:42 +0530
+Processing by TrackingPlansController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/edit.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 14]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 7.1ms | Allocations: 3461)
+  Rendered tracking_plans/edit.html.erb within layouts/application (Duration: 7.3ms | Allocations: 3522)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 10289)
+Completed 200 OK in 19ms (Views: 14.3ms | ActiveRecord: 0.4ms | Allocations: 11630)
+
+
+Started PATCH "/tracking_plans/14" for ::1 at 2023-08-25 01:06:44 +0530
+Processing by TrackingPlansController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "tracking_plan"=>{"name"=>"name new", "description"=>"", "events_attributes"=>{"0"=>{"_destroy"=>"0", "name"=>"new event", "description"=>"event new", "rules"=>"ewvewew", "id"=>"12"}}}, "add_event"=>"Add Event", "id"=>"14"}
+  [1m[36mTrackingPlan Load (0.2ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans" WHERE "tracking_plans"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/tracking_plans_controller.rb:71:in `set_tracking_plan'
+  [1m[36mEvent Pluck (0.1ms)[0m  [1m[34mSELECT "events"."name", "events"."id" FROM "events" ORDER BY "events"."id" DESC[0m
+  ↳ app/controllers/tracking_plans_controller.rb:85:in `set_events'
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/new.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events" INNER JOIN "tracking_plan_to_event_mappings" ON "events"."id" = "tracking_plan_to_event_mappings"."event_id" WHERE "tracking_plan_to_event_mappings"."tracking_plan_id" = ?[0m  [["tracking_plan_id", 14]]
+  ↳ app/views/tracking_plans/_form.html.erb:25
+  Rendered tracking_plans/_form.html.erb (Duration: 4.3ms | Allocations: 3758)
+  Rendered tracking_plans/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3953)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 10723)
+Completed 422 Unprocessable Entity in 21ms (Views: 14.1ms | ActiveRecord: 0.4ms | Allocations: 13220)
+
+
+Started GET "/tracking_plans" for ::1 at 2023-08-25 01:06:47 +0530
+Processing by TrackingPlansController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering tracking_plans/index.html.erb within layouts/application
+  [1m[36mTrackingPlan Load (0.1ms)[0m  [1m[34mSELECT "tracking_plans".* FROM "tracking_plans"[0m
+  ↳ app/views/tracking_plans/index.html.erb:31
+  Rendered tracking_plans/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1582)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 8883)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.1ms | Allocations: 9148)
+
+
+Started GET "/" for ::1 at 2023-08-25 01:06:51 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/saurabhbansal/.gem/ruby/3.1.4/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/saurabhbansal/.gem/ruby/3.1.4/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 302)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1158)
+
+
+Started GET "/events" for ::1 at 2023-08-25 01:07:30 +0530
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:35
+  Rendered events/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2678)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 10414)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.4ms | Allocations: 11369)
+
+
+Started GET "/events" for ::1 at 2023-08-25 01:07:43 +0530
+Processing by EventsController#index as */*
+  Parameters: {"subject_id"=>"bc7b092c-0626-4dff-9d16-d6612dc288f1", "event"=>{}}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:35
+  Rendered events/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2264)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 9105)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.3ms | Allocations: 9477)
+
+
+Started GET "/events/index" for ::1 at 2023-08-25 01:07:50 +0530
+Processing by EventsController#show as */*
+  Parameters: {"subject_id"=>"bc7b092c-0626-4dff-9d16-d6612dc288f1", "id"=>"index", "event"=>{}}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:55:in `set_event'
+Completed 404 Not Found in 10ms (ActiveRecord: 0.5ms | Allocations: 963)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Event with 'id'=index):
+  
+app/controllers/events_controller.rb:55:in `set_event'
+Started POST "/events/index" for ::1 at 2023-08-25 01:07:57 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/events/index"):
+  
+Started POST "/events/" for ::1 at 2023-08-25 01:08:01 +0530
+Processing by EventsController#create as */*
+  Parameters: {"subject_id"=>"bc7b092c-0626-4dff-9d16-d6612dc288f1", "event"=>{}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 470)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.7) lib/action_controller/metal/request_forgery_protection.rb:253:in `handle_unverified_request'
+actionpack (7.0.7) lib/action_controller/metal/request_forgery_protection.rb:286:in `handle_unverified_request'
+actionpack (7.0.7) lib/action_controller/metal/request_forgery_protection.rb:275:in `verify_authenticity_token'
+activesupport (7.0.7) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.7) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.7) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.7) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.7) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.7) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.7) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.7) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.7) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/events" for ::1 at 2023-08-25 11:59:58 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.1ms)[0m  [1m[34mSELECT "events".* FROM "events"[0m
+  ↳ app/views/events/index.html.erb:35
+  Rendered events/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 7941)
+  Rendered layout layouts/application.html.erb (Duration: 377.5ms | Allocations: 124255)
+Completed 200 OK in 385ms (Views: 378.9ms | ActiveRecord: 0.3ms | Allocations: 129301)
+
+
+Started GET "/events/1/edit" for ::1 at 2023-08-25 12:00:01 +0530
+Processing by EventsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (0.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/events_controller.rb:55:in `set_event'
+  Rendering layout layouts/application.html.erb
+  Rendering events/edit.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 7.5ms | Allocations: 3187)
+  Rendered events/edit.html.erb within layouts/application (Duration: 9.0ms | Allocations: 3516)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 10384)
+Completed 200 OK in 23ms (Views: 15.9ms | ActiveRecord: 0.3ms | Allocations: 13214)
+
+

@@ -13,28 +13,32 @@
     <% end %>
 
     <div class="form-group">
-      <%= f.text_field :name, class: 'form-control' %>
       <%= f.label :name %><br>
+      <%= f.text_field :name, class: 'form-control' %>
     </div>
+
     <div class="form-group">
-      <%= f.text_field :description, class: 'form-control' %>
       <%= f.label :description %><br>
+      <%= f.text_field :description, class: 'form-control' %>
     </div>
 
     <%= f.fields_for :events do |ff| %>
-      <div class="flex gap-2">
-        <div class="text-sm text-right"> <%= ff.object.id || "New Event" %> </div>
-        <%= ff.check_box :_destroy, title: "Check to delete ingredient" %>
+      <div class="flex gap-2" style="width: 100%;background: lightblue;padding: 20px;margin-bottom: 10px">
+        <%= ff.label :remove_event, style: "margin-top:-2px;" %>
+        <%= ff.check_box :_destroy, title: "Remove Event", style: "margin-left:10px;margin-top:2px;" %>
 
-        <%= ff.label :name %><br>
-        <div class="selectField">
+        <div class="selectField" style="margin-top: 15px">
+          <%= ff.label :name %><br>
+
           <%= ff.text_field :name   %>
         </div>
-        <div class="selectField">
+        <div class="selectField" style="margin-top: 15px">
+          <%= ff.label :description %><br>
           <%= ff.text_field :description   %>
         </div>
-        <div class="selectField">
-          <%= ff.text_field :rules   %>
+        <div class="selectField" style="margin-top: 15px">
+          <%= ff.label :rules %><br>
+          <%= ff.text_area :rules, class: "form-textarea-input", cols: 100, rows: 10   %>
         </div>
 
       </div>
